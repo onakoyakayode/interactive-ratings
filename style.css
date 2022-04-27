@@ -20,8 +20,8 @@ body {
 .main-wrapper {
     width: 100%;
     box-sizing: border-box;
-    max-width: 50%;
-    margin: 100px auto 0px auto;
+    max-width: 480px;
+    margin: 70px auto 0px auto;
     background-color: hsl(213, 19%, 18%);
     padding: 20px;
     border-radius: 20px;
@@ -29,21 +29,13 @@ body {
 
 @media screen and (max-width: 600px) {
     .main-wrapper {
-        width: 100%;
-        box-sizing: border-box;
-        max-width: 90%;
-        margin: 100px auto 0px auto;
-        background-color: hsl(213, 19%, 18%);
-        padding: 20px;
-        border-radius: 20px;
+        max-width: 80%;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .main-wrapper {
-        width: 100%;
-        max-width: 80%;
-        padding: 30px;
+        max-width: 480px;
     }
 }
 
@@ -101,14 +93,14 @@ body {
 
 @media screen and (max-width: 600px) {
     .headline h2 {
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 600;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .headline h2 {
-        font-size: 30px;
+        font-size: 27px;
         font-weight: 600;
     }
 }
@@ -118,22 +110,20 @@ body {
     font-weight: 600;
     font-size: 13px;
     line-height: 1.4;
+    color: hsl(217, 12%, 63%);
 }
 
 @media screen and (max-width: 600px) {
     .feedback p {
-        font-weight: 600;
         font-size: 14px;
         line-height: 1.6;
-        color: hsl(217, 12%, 63%);
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .feedback p {
-        font-weight: 600;
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.6;
     }
 }
@@ -147,14 +137,14 @@ body {
 
 @media screen and (max-width: 600px) {
     .rating-buttons {
-        gap: 20px;
+        gap: 5%;
         margin-bottom: 30px;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .rating-buttons {
-        gap: 50px;
+        gap: 15px;
         margin-bottom: 30px;
     }
 }
@@ -174,17 +164,15 @@ body {
 
 @media screen and (max-width: 600px) {
     .rating-buttons > * {
-        padding: 35% 0px;
+        padding: 30% 0px;
         font-size: 15px;
-        margin-right: 0px;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .rating-buttons > * {
-        padding: 35% 0px;
-        font-size: 17px;
-        margin-right: 0px;
+        padding: 28% 0px;
+        font-size: 16px;
     }
 }
 
@@ -220,14 +208,14 @@ body {
 @media screen and (max-width: 600px) {
     .submit-button button {
         font-size: 14px;
-        height: 50px;
+        height: 45px;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .submit-button button {
         font-size: 15px;
-        height: 60px;
+        height: 48px;
     }
 }
 
@@ -236,7 +224,6 @@ body {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
     font-weight: 700;
-    height: 40px;
 }
 
 .feedback-message {
@@ -248,14 +235,19 @@ body {
 @media screen and (max-width: 600px) {
     .feedback-message {
         margin: 20px 0;
-        padding: 0px;
     }
 }
 
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .feedback-message {
+        margin: 18px 0;
+    }   
+}
+
 .feedback-img {
-    width: max-content;
+    width: 260px;
     height: auto;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 30px auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -275,7 +267,7 @@ body {
 }
 
 .feedback-img img {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -296,49 +288,49 @@ body {
     background-color: hsla(216, 12%, 54%, 0.123);
     margin: 0 auto;
     border-radius: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     font-weight: 600;
 }
 
 .feedback-rating p {
-    padding: 4px 15px;
+    padding: 7px 15px;
     color: hsla(25, 97%, 53%, 0.815);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
 }
 
 @media screen and (max-width: 600px) {
     .feedback-rating p {
-        padding: 10px 20px;
-        font-size: 20px;
+        padding: 7px 20px;
+        font-size: 16px;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .feedback-rating p {
-        font-size: 22px;
-        padding: 10px 20px;
+        font-size: 18px;
+        padding: 8px 20px;
     }
 }
 
 .feedback-message .thank-you {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 @media screen and (max-width: 600px) {
     .feedback-message .thank-you {
-        font-size: 30px;
-        margin-bottom: 20px;
+        font-size: 26px;
+        margin-bottom: 17px;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .feedback-message .thank-you {
-        font-size: 35px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 18px;
     }
 }
 
@@ -348,8 +340,8 @@ body {
 
 .appreciate-msg p {
     padding: 0px 2px;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
     line-height: 1.6;
     color: hsl(217, 12%, 63%);
 }
@@ -358,19 +350,17 @@ body {
     .appreciate-msg p {
         padding: 0px;
         font-size: 15px;
-        font-weight: 500;
     }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .appreciate-msg p {
         padding: 0px;
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 18px;
     }
 }
 
 
 .attribution {
-    margin-top: 20px;
+    margin-top: 40px;
 }
