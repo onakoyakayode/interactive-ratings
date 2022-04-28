@@ -13,6 +13,9 @@ let mainWrapper = document.querySelector('.feedback-wrapper');
 //Feedback div
 let feedbackWrapper = document.querySelector('.feedback-message');
 
+//Error-msg
+let errorMsg = document.querySelector('.error-msg')
+
 
 
 //to implement active state to the buttons
@@ -30,6 +33,7 @@ button.forEach((feedback) => {
 
 //To get a feedback using DOM element.
 submitButton.addEventListener('click', (event) => {
+
     button.forEach((feedback) => {
         feedback.addEventListener('click', (event) => {
             let rating = event.target.textContent;
@@ -42,5 +46,7 @@ submitButton.addEventListener('click', (event) => {
         })
     });
     mainWrapper.style.display = 'none';
-    feedbackWrapper.style.display = 'block'
+    feedbackWrapper.style.display = 'block';
+    errorMsg.display.style = 'none';
+    
 })
